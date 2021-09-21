@@ -1,0 +1,682 @@
+ .Project {
+    background-color: #f5f5f6;
+  }
+  #Project .Project__short-info {
+    padding: 100px 0 0px;
+  }
+  #Project .Project__short-info .Short-info__items {
+    display: flex;
+    justify-content: space-between;
+    width: 1750px;
+    margin: 0 auto;
+  }
+  #Project .Project__short-info .Short-info__item {
+    width: 420px;
+    height: 90px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  #Project .Short-info__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Project .Short-info__title h3 {
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  #Project .Short-info__info {
+    height: 53px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #Project .Short-info__info h2 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  #Project .Short-info__info span {
+    font-size: 12px;
+    font-weight: 500;
+    transform: translate(0, -5px);
+  }
+  #Project .Short-info__chart {
+    width: 37%;
+    height: 53px;
+    position: relative;
+  }
+  #Project .good {
+    color: #22af47;
+  }
+  #Project .norm {
+    color: rgb(255, 191, 54);
+  }
+  #Project .bad {
+    color: #ff0000;
+  }
+  #Project .Info-box__type--1,
+  #Project .good,
+  #Project .Info-box__type--2 {
+    width: 100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    visibility: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+  }
+  #Project .Info-box__type--2 {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 15%);
+  }
+  #Project .Chart__values-section-type--1 li {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    font-size: 12px;
+    color: #5e7d8a;
+    z-index: 20;
+    width: 9.6px;
+    height: 53px;
+  }
+  #Project .dash {
+    background-image: linear-gradient(#00000047 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 4px;
+    background-repeat: repeat-y;
+  }
+  #Project .Chart__values-section-type--1 li p {
+    position: relative;
+    z-index: 1;
+  }
+  #Project .Chart__info-box-type--1 {
+    position: absolute;
+    top: 0;
+  }
+  #Project .Info_box__header-type--1,
+  #Project .Info-box__header-type--2 {
+    height: 20px;
+    background-color: #f5f5f6;
+    padding: 2px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #Project .Info_box__header-type--1 h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+  }
+  #Project .Info-box__header-type--2 h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5e7d8a;
+    padding: 3px 0;
+  }
+  #Project .Info-box__values-type--1,
+  #Project .Info-box__values-type--2 {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #Project .Info-box__values-type--1 ul {
+    display: flex;
+  }
+  #Project .Info-box__values-type--1 li,
+  #Project .Info-box__values-type--2 li {
+    padding: 2px 5px;
+    margin: 5px auto !important;
+    color: #5e7d8a;
+    font-size: 12px !important;
+    display: flex !important;
+  }
+  #Project .Info-box__values-type--2 li {
+    padding: 5px 5px;
+    margin: 0 !important;
+  }
+  #Project .Info-box__values-type--2 li:first-child,
+  #Project .Info-box__values-type--2 li:last-child {
+    padding: 10px 5px;
+  }
+  #Project .circle,
+  #Project .circle2,
+  #Project .circle3,
+  #Project .Sheet-statistics__explanations span,
+  #Project .Marketing__explanations span,
+  #Project .Risk__explanations span {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background-color: #00acf0;
+    display: block;
+    transform: translateY(0px) !important;
+  }
+  #Project .circle3 {
+    background-color: #ffbf36;
+  }
+  #Project .Info-box__values-type--2 li:nth-child(1) .circle2,
+  #Project .Stock-analysis__explanations li:nth-child(1) .circle2 {
+    background-color: #00acf0;
+    transform: translateY(0px) !important;
+  }
+  #Project .Info-box__values-type--2 li:nth-child(2) .circle2,
+  #Project .Stock-analysis__explanations li:nth-child(2) .circle2 {
+    background-color: #ffbf36;
+    transform: translateY(0px) !important;
+  }
+  #Project .Info-box__values-type--2 li:nth-child(3) .circle2,
+  #Project .Stock-analysis__explanations ul li:nth-child(3) .circle2 {
+    background-color: #22af47;
+    transform: translateY(0px) !important;
+  }
+  #Project .Project__chart,
+  #Project .Chart__type--2 {
+    margin: 20px 0 0;
+    position: relative;
+  }
+  #Project .Stock-analysis__description {
+    padding: 20px;
+  }
+  #Project .Project__chart-top-items,
+  #Project .Project__chart-bottom-items {
+    width: 1750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #Project .Chart__stock-analysis,
+  #Project .Chart__lead-stat {
+    height: 515px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Project .Chart__stock-analysis,
+  #Project .ccb-country-stat {
+    width: 1000px;
+  }
+  #Project .Chart__lead-stat,
+  #Project .ccb-feedback-activity {
+    width: 730px;
+  }
+  #Project .Stock-analysis__header,
+  #Project .Lead-stat__header,
+  #Project .ccb-cs-head,
+  #Project .ccb-feedback-activity,
+  #Project .Sheet-statistics__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Project .Stock-analysis__header,
+  #Project .Lead-stat__header,
+  #Project .Sheet-statistics__header,
+  #Project .Risk__header,
+  #Project .Marketing__header {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  #Project .Stock-analysis__text {
+    width: 60%;
+  }
+  #Project .ccb-cs-head h3,
+  #Project .Stock-analysis__text h4,
+  #Project .Sheet-statistics__text h4,
+  #Project .Risk__text h4,
+  #Project .Marketing__text h4,
+  #Project .Lead-stat__setting h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  #Project .Lead-stat__text h4,
+  #Project .Sheet-statistics__text h4 {
+    display: flex;
+  }
+  #Project .ccb-cs-head span,
+  #Project .Stock-analysis__text p,
+  #Project .Sheet-statistics__text p,
+  #Project .Marketing__text p,
+  #Project .Risk__text p,
+  #Project .Lead-stat__text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+    line-height: 21px;
+  }
+  #Project .Lead-stat__text h4 p,
+  #Project .Sheet-statistics__text p {
+    margin-left: 5px;
+  }
+  #Project .ccb-fa-a-setting li,
+  #Project .Stock-analysis__setting li,
+  #Project .Sheet-statistics__setting li,
+  #Project .Lead-stat__setting li {
+    width: 4px;
+    height: 4px;
+    background-color: #5e7d8a;
+    border-radius: 100%;
+    margin: 2px;
+  }
+  #Project .Stock-analysis__explanations ul,
+  #Project .cct-spc-head ul {
+    display: flex;
+    margin: 20px 0 0;
+  }
+  #Project .Stock-analysis__explanations ul {
+    justify-content: flex-end;
+  }
+  #Project .Stock-analysis__explanations li,
+  #Project .Info-box__values-type--1 li {
+    text-align: end;
+    font-size: 12px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  /**/
+  #Project .Chart__type--1,
+  #Project .Chart__type--3 {
+    position: relative;
+    margin-top: 20px;
+  }
+  #Project .Chart__type--3 {
+    margin-top: 40px;
+  }
+  #Project .Chart__risk .Chart__type--3 {
+    margin-top: 20px;
+  }
+  #Project .Chart__type--3 canvas {
+    z-index: 10;
+    position: relative;
+  }
+  #Project canvas:nth-child(3) {
+    border: 1px solid #e6e6e6;
+  }
+  #Project .Chart__type--1-border {
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    border-bottom-color: #5e7d8a;
+    border-right: none;
+    border-left: none;
+  }
+  #Project .Chart__type--3_border {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    position: absolute;
+  }
+  #Project .Chart__type--1-left-values ul {
+    position: absolute;
+    top: 0;
+  }
+  #Project .Chart__type--1-bottom-values ul,
+  #Project .Chart__type--3_bottom-values ul {
+    position: absolute;
+    left: 0;
+    display: flex;
+  }
+  #Project .Chart__type--1-bottom-values li:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-right: 1px solid #5e7d8a;
+    transform: translate(0px, -3px);
+  }
+  #Project .Chart__type--1-chart-values ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+  }
+  #Project .Chart__type--1-chart-values li {
+    height: 300px;
+    cursor: pointer;
+  }
+  #Project .Chart__type--1-value-circle li {
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+  }
+  #Project .Chart__type--1-value-circle li:nth-child(n) {
+    background-color: #00acf0;
+  }
+  #Project .Chart__type--1-value-circle li:nth-child(n + 7) {
+    background-color: rgb(255, 191, 54);
+  }
+  #Project .Chart__type--1-value-circle li:nth-child(n + 13) {
+    background-color: #22af47;
+  }
+  #Project .Chart__line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 306px;
+    background-image: linear-gradient(#00000047 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+  #Project .v3-li {
+    font-size: 13px;
+    text-align: end;
+  }
+  #Project .v2-li {
+    font-size: 13px;
+  }
+  #Project .v-li {
+    text-align: end;
+    font-size: 13px;
+    transform: translateY(-7px);
+  }
+  #Project .CChart__type--2-circle-info ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 14;
+  }
+  #Project .CChart__type--2-circle-info li {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  #Project .CChart__type--2-circle-info li:nth-child(1) {
+    background-color: #22af47;
+  }
+  #Project .Sheet-statistics__explanations li:nth-child(2) span,
+  #Project .Risk__explanations li:nth-child(2) span,
+  #Project .Marketing__explanations li:nth-child(2) span,
+  #Project .CChart__type--2-circle-info li:nth-child(2) {
+    background-color: rgb(255, 191, 54);
+  }
+  #Project .CChart__type--2-circle-info li:nth-child(3) {
+    background-color: #00acf0;
+  }
+  #Project .Sheet-statistics__explanations li:nth-child(3) span,
+  #Project .Risk__explanations li:nth-child(3) span,
+  #Project .Marketing__explanations li:nth-child(3) span {
+    background-color: #00acf030;
+  }
+  #Project.Sheet-statistics__explanations li:nth-child(4) span,
+  #Project.Risk__explanations li:nth-child(4) span,
+  #Project.Marketing__explanations li:nth-child(4) span {
+    background-color: #ffbf3630;
+  }
+  #Project .Chart__type--3-chart-circle {
+    position: absolute;
+    top: 0;
+    z-index: 13;
+    overflow: hidden;
+  }
+  #Project .Chart__type--3-chart-circle li {
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  #Project .Sheet-statistics__explanations,
+  #Project .Marketing__explanations,
+  #Project .Risk__explanations {
+    width: 100%;
+    margin-top: 60px;
+  }
+  #Project .Sheet-statistics__explanations ul,
+  #Project .Marketing__explanations ul,
+  #Project .Risk__explanations ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #Project .Sheet-statistics__explanations li,
+  #Project .Marketing__explanations li,
+  #Project .Risk__explanations li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #5e7d8a;
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  #Project .Chart__type--3 .Info-box__type--2 {
+    width: 110px;
+    z-index: 14;
+    transition: all 0.2s ease;
+  }
+  #Project .Chart__type--3 .Info-box__values-type--2 {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+  }
+  #Project .Chart__type--3 .circle {
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+  }
+  #Project .Chart__type--3 .Chart__type--1-chart-values li {
+    height: 250px;
+  }
+  #Project .Chart__risk .Chart__line {
+    z-index: 10;
+    height: 255px;
+  }
+  #Project .info-box__values p {
+    font-size: 13px;
+    margin: 3px 0;
+  }
+  #Project .info-box__values p span {
+    font-weight: 600;
+  }
+  #Project .Chart__risk .Info-box__type--2 {
+    width: 50px;
+  }
+  #Project .Chart__risk .Info-box__values-type--2 li {
+    padding: 2px;
+  }
+  /**/
+  #Project .Chart__sheet-statistics,
+  #Project .Chart__risk,
+  #Project .Chart__marketing {
+    margin-top: 20px;
+    width: calc(33.33% - 15px);
+    height: 480px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Project .Project__table table {
+    width: 1750px;
+    margin: 20px auto 0;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #Project .Project__table table tr {
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  #Project .Project__table table td {
+    padding: 10px;
+    font-weight: 400;
+    color: #364850fb;
+  }
+  #Project .Project__table table td i {
+    margin-right: 5px;
+    color: #5e7d8a80;
+    font-size: 22px;
+  }
+  #Project .Project__table tbody tr td:nth-child(7) {
+    width: 20%;
+  }
+  #Project .Project__table-task {
+    display: flex;
+    align-items: center;
+  }
+  #Project .table--color1 {
+    background-color: #d8f2fc;
+    color: #00acf0;
+  }
+  #Project .color2 {
+    background-color: #fee2e1;
+    color: #f8534c;
+  }
+  #Project .table--color3 {
+    background-color: #eff9f2;
+    color: #22af47;
+  }
+  #Project .bar-color {
+    background-color: #5e7d8a30;
+  }
+  #Project .bar-table--color1 {
+    background-color: #22af47;
+  }
+  #Project .bar-color2 {
+    background-color: #00acf0;
+  }
+  #Project  .bar-table--color3 {
+    background-color: #f8534c;
+  }
+  #Project .Project__table-budget {
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  #Project .logo {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+  }
+  #Project .logo img {
+    width: 45px;
+  }
+  #Project .sb-line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    transform: translate(0px, -3px);
+  }
+  #Project .Project__table-status-bar {
+    width: 90%;
+    position: relative;
+  }
+  #Project .Project__table-status {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (max-width: 1900px) {
+    #Project .Project__short-info .Project__table {
+      width: 100vw;
+    }
+    #Project .Project__short-info .Short-info__items,
+    #Project .Project__chart-top-items,
+    #Project .Project__chart-bottom-items,
+    #Project .Project__table table {
+      width: 91.14vw;
+    }
+    #Project .Project__short-info .Short-info__item {
+      width: calc(100% / 4 - 15px);
+    }
+    #Project .Chart__stock-analysis,
+    #Project .ccb-country-stat {
+      width: calc(57% - 20px);
+    }
+    #Project .Chart__lead-stat,
+    #Project .ccb-feedback-activity {
+      width: 43%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    #Project .v2-li {
+      font-size: 10px;
+    }
+    #Project .Chart__type--1-left-values .v2-li {
+      transform: translateX(7px);
+    }
+    #Project .Chart__type--3 .v2-li {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    #Project .Project__short-info .Short-info__items {
+      flex-wrap: wrap;
+    }
+    #Project .Project__short-info .Short-info__item {
+      width: calc(100% / 2 - 10px);
+    }
+    #Project .Project__short-info .Short-info__item:nth-child(3),
+    #Project .Project__short-info .Short-info__item:nth-child(4) {
+      margin-top: 20px;
+    }
+    #Project .Project__chart-top-items,
+    #Project .Project__chart-bottom-items {
+      flex-direction: column;
+      width: 91.14vw;
+      margin: 0 auto;
+    }
+    #Project .Chart__stock-analysis,
+    #Project .ccb-country-stat,
+    #Project .Chart__lead-stat,
+    #Project .ccb-feedback-activity {
+      width: 100%;
+      margin: 10px 0;
+    }
+    #Project .Chart__sheet-statistics,
+    #Project .Chart__risk,
+    #Project .Chart__marketing {
+      width: 91.14vw;
+    }
+    #Project .Project__table {
+      overflow: scroll;
+      width: 91.14vw;
+      margin: 0 auto;
+    }
+    #Project .Project__table table {
+      width: 900px;
+    }
+  }
+  @media screen and (max-width: 567px) {
+    #Project .Project__short-info .Short-info__item {
+      width: 91.14vw;
+      margin-top: 20px;
+    }
+    #Project .Project__short-info .Short-info__item:nth-child(1) {
+      margin: 0;
+    }
+    #Project .Chart__stock-analysis {
+      height: 550px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #Project .Chart__type--3 .v2-li {
+      font-size: 8px;
+    }
+    #Project .v2-li {
+      font-size: 8px;
+    }
+    #Project .Chart__stock-analysis {
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    #Project .Chart__risk,
+    #Project .Chart__marketing {
+      height: auto;
+    }
+  }

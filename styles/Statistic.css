@@ -1,0 +1,551 @@
+  .Statistic {
+    background-color: #f5f5f6;
+  }
+  #Statistic .Statistic__chart {
+    width: 1750px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  #Statistic .Info-chart__items,
+  #Statistic .Chart__device-type-and-sales {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #Statistic .Info-chart__bonus,
+  #Statistic .Info-chart__new-session,
+  #Statistic .Info-chart__time-on-site {
+    width: 380px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Statistic .Chart__device-type-and-sales {
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  #Statistic .Chart__device-type,
+  #Statistic .Chart__sales {
+    width: 49%;
+    height: 560px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #Statistic .Chart__sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Statistic .Sales__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Statistic .Chart__device-type-and-sales .chart {
+    margin-top: 20px;
+  }
+  #Statistic .Statistic__chart-right-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 550px;
+  }
+  #Statistic .Chart__audience-area-pole,
+  #Statistic .Chart__device {
+    height: 49%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Statistic .Info_chart__title {
+    padding: 15px 15px 0;
+    box-sizing: border-box;
+  }
+  #Statistic .Info-chart__items h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #Statistic .Info-chart__items h4,
+  #Statistic .Sales__info-text h4 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  #Statistic .Info-chart__items span,
+  #Statistic .Sales__info-text span {
+    font-size: 13px;
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  #Statistic .Info_chart__stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0;
+    box-sizing: border-box;
+  }
+  #Statistic .Info_chart__chart {
+    position: relative;
+    z-index: 5;
+  }
+  #Statistic .Device-type__text h4,
+  #Statistic .Sales__text h4,
+  #Statistic .Audience-area-pole__text h4,
+  #Statistic .Device__text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  #Statistic .Device-type__header,
+  #Statistic .Sales__header,
+  #Statistic .Audience-area-pole__header,
+  #Statistic .Device__header,
+  #Statistic .Sales__info-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #Statistic .Device-type__text p,
+  #Statistic .Sales__text p,
+  #Statistic .Audience-area-pole__text p,
+  #Statistic .Device__text p {
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+    line-height: 21px;
+  }
+  #Statistic .Device-type__setting ul,
+  #Statistic .Sales__setting ul,
+  #Statistic .Audience-area-pole__setting ul,
+  #Statistic .Device__setting ul {
+    display: flex;
+  }
+  #Statistic .Device-type__setting li,
+  #Statistic .Sales__setting li,
+  #Statistic .Audience-area-pole__setting li,
+  #Statistic .Device__setting li {
+    width: 4px;
+    height: 4px;
+    background-color: #5e7d8a;
+    border-radius: 100%;
+    margin: 2px;
+  }
+  #Statistic .Info_chart {
+    transform: translateY(4px);
+  }
+  #Statistic .Chart__device .src-h-text {
+    display: flex;
+  }
+  #Statistic .Chart__device .src-h-text h4 {
+    width: 130px;
+    margin-right: 5px;
+  }
+  #Statistic .Sales__info-text {
+    margin-top: 20px;
+  }
+  /**/
+  #Statistic .Statistic__table table {
+    width: 1750px;
+    margin: 20px auto 0;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #Statistic .Statistic__table table tr {
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  #Statistic .Statistic__table table td {
+    padding: 10px;
+    font-weight: 400;
+    color: #364850fb;
+  }
+  #Statistic .Statistic__table tbody td:nth-child(3),
+  #Statistic .Statistic__table-chart {
+    width: 170px;
+  }
+  #Statistic .Statistic__table table td i {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  #Statistic .task {
+    display: flex;
+    align-items: center;
+  }
+  #Statistic .fa-arrow-down {
+    color: #f8534c;
+  }
+  #Statistic .fa-arrow-up {
+    color: #22af47;
+  }
+  #Statistic .logo {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  #Statistic .logo img {
+    width: 45px;
+  }
+  #Statistic sb-line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    transform: translate(0px, -3px);
+  }
+  /*Chart*/
+  #Statistic .Chart__type--1 {
+    position: relative;
+    margin-top: 20px;
+  }
+  #Statistic .Chart__Info-box-type--1 {
+    position: absolute;
+    top: 0;
+  }
+  #Statistic .Info-box__type--1 {
+    width: 100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    visibility: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+  }
+  
+  #Statistic .Info_box__header-type--1,
+  #Statistic .info-bar-head2 {
+    height: 20px;
+    background-color: #f5f5f6;
+    padding: 2px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #Statistic .Info_box__header-type--1 h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+  }
+  #Statistic .info-bar-head2 h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5e7d8a;
+    padding: 3px 0;
+  }
+  #Statistic .Info_box__values-type--1,
+  #Statistic .info-bar-values2 {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #Statistic .Info_box__values-type--1 ul {
+    display: flex;
+  }
+  #Statistic .Info_box__values-type--1 li,
+  #Statistic .info-bar-values2 li {
+    padding: 2px 5px;
+    margin: 5px auto !important;
+    color: #5e7d8a;
+    font-size: 12px !important;
+    display: flex !important;
+  }
+  #Statistic .info-bar-values2 li {
+    padding: 5px 5px;
+    margin: 0 !important;
+  }
+  #Statistic .info-bar-values2 li:first-child,
+  #Statistic .info-bar-values2 li:last-child {
+    padding: 10px 5px;
+  }
+  #Statistic .Chart__type--1-value-section ul,
+  #Statistic .Chart__type--1-value-section ul {
+    display: flex;
+  }
+  #Statistic .Chart__type--1-value-section li,
+  #Statistic .Chart__type--1-value-section {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    font-size: 12px;
+    color: #5e7d8a;
+    z-index: 20;
+    cursor: pointer;
+  }
+  #Statistic .Chart__type--1:nth-child(3) .Chart__type--1-value-section ul li {
+    position: relative;
+  }
+  #Statistic .Chart__line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 110px;
+    background-image: linear-gradient(#00000047 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+  #Statistic .Chart__sales .Chart__line,
+  #Statistic .Chart__type--1-value-section li {
+    height: 300px;
+  }
+  #Statistic .Chart__explanations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #Statistic .Chart__explanations ul {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  #Statistic .Statistic__chart-left-items .Chart__explanations ul {
+    margin-top: 40px;
+    width: 60%;
+  }
+  #Statistic .Chart__explanations li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #5e7d8a;
+    width: 30%;
+    box-sizing: border-box;
+  }
+  #Statistic .Chart__explanations span {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background-color: #00acf0;
+    display: block;
+    transform: translateY(0px) !important;
+  }
+  #Statistic .Chart__explanations li:nth-child(1) span {
+    background-color: #00acf0;
+  }
+  #Statistic .Chart__explanations li:nth-child(2) span {
+    background-color: #22af47;
+  }
+  #Statistic .Chart__explanations li:nth-child(3) span {
+    background-color: rgb(255, 191, 54);
+  }
+  #Statistic .Chart__sales .Chart__explanations li:nth-child(1) span {
+    background-color: #ffbf36;
+  }
+  #Statistic .Chart__sales .Chart__explanations li:nth-child(2) span {
+    background-color: #ffbf3690;
+  }
+  #Statistic .Chart__device-type .Chart__explanations li:nth-child(1) span {
+    background-color: #00acf020;
+  }
+  #Statistic .Chart__device-type .Chart__explanations li:nth-child(2) span {
+    background-color: #00acf090;
+  }
+  #Statistic .Chart__device-type .Chart__explanations li:nth-child(3) span {
+    background-color: #00acf0;
+  }
+  #Statistic .Chart__type--2-border,
+  #Statistic .Chart__type--1-border {
+    position: absolute;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #e6e6e6;
+  }
+  #Statistic .Chart__type--2-left-values ul,
+  #Statistic .Chart__type--1-left-values ul {
+    position: absolute;
+    top: 0;
+  }
+  #Statistic .Chart__type--2-bottom-values ul,
+  #Statistic .Chart__type--1-bottom-values ul {
+    position: absolute;
+    left: 0;
+    display: flex;
+  }
+  #Statistic .Chart__type--1-bottom-values li::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 3px;
+    border-right: 1px solid #000;
+    transform: translateY(-3px);
+  }
+  #Statistic .v2-li span {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 3px;
+    display: block;
+    border-right: 1px solid #000;
+    transform: translateY(-6px);
+  }
+  #Statistic .v-li {
+    font-size: 13px;
+    text-align: end;
+  }
+  #Statistic .v2-li {
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Statistic .v3-li {
+    font-size: 13px;
+    text-align: end;
+  }
+  #Statistic .Chart__device .Chart__type--1 {
+    margin-top: 20px;
+  }
+  #Statistic .Chart__type--1_value_box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+  }
+  
+  #Statistic .Chart__type--1_value_box ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 16.6666666667%;
+  }
+  #Statistic .Chart__type--1_value_box li {
+    width: 70%;
+    transform: translateX(21%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #Statistic .Chart__type--1_value_box ul li:nth-child(3) {
+    background-color: #00acf0;
+    z-index: 4;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(3):hover {
+    background-color: #61d2ff;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(2) {
+    background-color: #ffbf36;
+    z-index: 3;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(2):hover {
+    background-color: #ffd06c;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(1) {
+    background-color: #22af47;
+    z-index: 2;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(1):hover {
+    background-color: #00ff43;
+  }
+  #Statistic .Chart__type--1_value_box ul li:nth-child(4) {
+    width: 11.66595744680851%;
+    height: 250px;
+    position: absolute;
+    background-color: #00acf020;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+  #Statistic .Chart__type--1_value_box ul:hover li:nth-child(4) {
+    opacity: 1;
+  }
+  @media screen and (max-width: 1900px) {
+    #Statistic .Statistic__table {
+      width: 100vw;
+    }
+    #Statistic .Statistic__chart,
+    #Statistic .Statistic__table table {
+      width: 91.14vw;
+    }
+    #Statistic .Info-chart__items,
+    #Statistic .Chart__device-type-and-sales {
+      width: 61.45vw;
+    }
+    #Statistic .Info-chart__bonus,
+    #Statistic .Info-chart__new-session,
+    #Statistic .Info-chart__time-on-site {
+      width: calc(32.89% - 10px);
+    }
+    #Statistic .Chart__device-type,
+    #Statistic .Chart__sales {
+      width: calc(50% - 10px);
+    }
+    #Statistic .Statistic__chart-right-items {
+      width: calc(91.14vw - 61.45vw - 20px);
+    }
+  }
+  @media screen and (max-width: 996px) {
+    #Statistic .Statistic__chart,
+    #Statistic .Info-chart__items,
+    #Statistic .Statistic__chart-right-items {
+      flex-direction: column;
+    }
+    #Statistic .Chart__device-type-and-sales {
+      width: 91.14vw;
+    }
+    #Statistic .Info-chart__bonus,
+    #Statistic .Info-chart__new-session,
+    #Statistic .Info-chart__time-on-site,
+    #Statistic .Statistic__chart-right-items {
+      width: 91.14vw;
+      margin-top: 20px;
+    }
+    #Statistic .Info-chart__bonus {
+      margin: 0;
+    }
+    #Statistic .Statistic__chart-right-items {
+      height: 780px;
+    }
+    #Statistic .Statistic__table {
+      overflow: scroll;
+      width: 91.14vw;
+      margin: 0 auto;
+    }
+    #Statistic .Statistic__table table {
+      width: 900px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #Statistic .Chart__device-type-and-sales {
+      flex-direction: column;
+    }
+    #Statistic .Chart__device-type,
+    #Statistic .Chart__sales {
+      width: 91.14vw;
+    }
+    #Statistic .Chart__sales {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #Statistic .Statistic__chart-left-items .Chart__explanations ul,
+    #Statistic .Chart__explanations ul {
+      width: 100%;
+    }
+    #Statistic .v3-li,
+    #Statistic .v2-li {
+      font-size: 10px;
+    }
+  }

@@ -1,0 +1,708 @@
+  .CRM {
+    background-color: #f5f5f6;
+  }
+  #CRM .CRM__short-stat {
+    padding: 100px 0 0;
+  }
+  #CRM .CRM__short-stat-items {
+    display: flex;
+    justify-content: space-between;
+    width: 1750px;
+    margin: 0 auto;
+  }
+  #CRM .CRM__short-stat-item {
+    width: 420px;
+    height: 130px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  #CRM .Short-stat-item__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  #CRM .Short-stat-item__header h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #CRM .Short-stat-item__header span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #CRM .Short-stat-item__value {
+    text-align: center;
+    margin: 10px 0;
+  }
+  #CRM .Short-stat-item__value h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  #CRM .Short-stat-item__value span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5e7d8a;
+  }
+  #CRM .status--good {
+    color: #22af47;
+  }
+  #CRM .status--normal {
+    color: rgb(255, 191, 54);
+  }
+  #CRM .status--bad {
+    color: #ff0000;
+  }
+  #CRM .CRM__chart {
+    margin: 20px 0 0;
+  }
+  #CRM .CRM__chart-top-items,
+  #CRM .CRM__chart-bottom-tems {
+    width: 1750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #CRM .Chart__adwords-views,
+  #CRM .Chart__stock-price {
+    height: 550px;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #CRM .Chart__adwords-views,
+  #CRM .Chart__country-stat {
+    width: 1000px;
+  }
+  #CRM .Chart__stock-price,
+  #CRM .Feedback-and-activity {
+    width: 730px;
+  }
+  #CRM .Adwords-views__title,
+  #CRM .Stock-price__header,
+  #CRM .Country-stat__header,
+  #CRM .Feedback-and-activity {
+    display: flex;
+    justify-content: space-between;
+  }
+  #CRM .Adwords_views__text {
+    width: 60%;
+  }
+  #CRM .Country-stat__header h3,
+  #CRM .Adwords_views__text h4,
+  #CRM .Stock-price__text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  #CRM .Country-stat__header span,
+  #CRM .Stock-price__text p,
+  #CRM .Adwords_views__text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+    line-height: 21px;
+  }
+  .CRM .Activity__setting li,
+  #CRM .Stock-price__setting li,
+  #CRM .Adwords_views__setting li {
+    width: 4px;
+    height: 4px;
+    background-color: #5e7d8a;
+    border-radius: 100%;
+    margin: 2px;
+  }
+  #CRM .Adwords_views__explanations ul,
+  #CRM .Average__text ul {
+    display: flex;
+    margin: 20px 0 0;
+  }
+  #CRM .Adwords_views__explanations ul {
+    justify-content: flex-end;
+  }
+  #CRM .Average__text ul {
+    justify-content: space-between;
+  }
+  #CRM .Adwords_views__explanations li,
+  #CRM .Info_box__values li {
+    text-align: end;
+    font-size: 12px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  #CRM .circle,
+  #CRM .Chart__stock-price_explanations span {
+    width: 12px;
+    height: 12px;
+    background-color: #00acf0;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: block;
+  }
+  #CRM .Adwords_views__explanations li:first-child .circle,
+  #CRM .Info_box__values li:first-child .circle,
+  #CRM .Chart__type--2-values-info-box .Info_box__values li:first-child .circle {
+    background-color: #00acf0;
+  }
+  #CRM .Adwords_views__explanations li:last-child .circle,
+  #CRM .Info_box__values li:last-child .circle {
+    background-color: rgb(255, 191, 54);
+  }
+  #CRM .Average__text li:first-child {
+    font-size: 14px;
+  }
+  #CRM .Average__text li:last-child {
+    font-size: 22px;
+    color: #5e7d8a;
+  }
+  #CRM .Chart__stock-price_explanations ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5e7d8a;
+  }
+  #CRM .Chart__stock-price_explanations li {
+    display: flex;
+    align-items: center;
+  }
+  #CRM .Chart__stock-price_explanations span {
+    background-color: #3cbbec;
+  }
+  #CRM .Chart__stock-price_explanations li:nth-child(1) span {
+    opacity: 0.2;
+  }
+  #CRM .Chart__stock-price_explanations li:nth-child(2) span {
+    opacity: 0.4;
+  }
+  #CRM .Chart__stock-price_explanations li:nth-child(3) span {
+    opacity: 0.6;
+  }
+  #CRM .Chart__stock-price_explanations li:nth-child(4) span {
+    opacity: 0.8;
+  }
+  #CRM .Chart__stock-price_explanations li:nth-child(5) span {
+    opacity: 1;
+  }
+  /**/
+  #CRM  li {
+    list-style-type: none;
+  }
+  #CRM .Chart__type--1,
+  #CRM .Chart__type--2 {
+    position: relative;
+    transform: translate(30px, 20px);
+  }
+  #CRM .Chart__type--1-border,
+  #CRM .Chart__type--2-border {
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    border-left-color: #000;
+    border-bottom-color: #000;
+    border-right: none;
+  }
+  #CRM canvas {
+    border: 1px solid #e6e6e6;
+  }
+  #CRM .Chart__type--1-left-values ul,
+  #CRM .Chart__type--2-left-values ul {
+    position: absolute;
+    top: 0;
+  }
+  #CRM .Chart__type--1-bottom-values ul,
+  #CRM .Chart__type--2-bottom-values ul {
+    position: absolute;
+    left: 0;
+    display: flex;
+  }
+  #CRM .Chart__type--1-bottom-values li:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-right: 1px solid #000;
+    transform: translate(0px, -4px);
+  }
+  #CRM .Chart__type--2-bottom-values li:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-right: 1px solid #000;
+    transform: translate(-14px, -4px);
+  }
+  #CRM .v-li {
+    text-align: end;
+    font-size: 14px;
+  }
+  #CRM .v2-li {
+    text-align: end;
+    font-size: 10px;
+  }
+  #CRM .v3-li {
+    text-align: center;
+    font-size: 12px;
+  }
+  #CRM .Chart__type--1-chart-values li {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    font-size: 12px;
+    color: #5e7d8a;
+    width: 30px;
+    height: 50%;
+    z-index: 20;
+  }
+  #CRM .Chart__type--2-chart-values li {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 300px;
+    z-index: 20;
+  }
+  #CRM .Chart__type--2-chart-values li:hover {
+    background-color: #0baae810;
+  }
+  #CRM .Chart__type--1-chart-values li p {
+    position: relative;
+    z-index: 1;
+  }
+  #CRM .Chart__type--1-values-info-box {
+    position: absolute;
+    top: 0;
+  }
+  #CRM .Info_box__type--1 {
+    width: 175px;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    visibility: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+  }
+  #CRM .Chart__type--2-values-info-box .Info_box__type--1 {
+    width: 200px;
+    transition: none;
+    z-index: 20;
+  }
+  #CRM .Info_box__header {
+    height: 20px;
+    background-color: #f5f5f6;
+    padding: 2px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  #CRM .Info_box__header h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e7d8a;
+  }
+  #CRM .Info_box__values {
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #CRM .Info_box__values ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #CRM .Info_box__values li {
+    padding: 2px 5px;
+    margin: 5px auto;
+    color: #5e7d8a;
+  }
+  #CRM .Info_box__values .circle {
+    width: 10px;
+    height: 10px;
+  }
+  #CRM .Info_box__type--1 p {
+    font-weight: 500;
+    padding-left: 2px;
+  }
+  #CRM .Chart__line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 306px;
+    background-image: linear-gradient(#00000047 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+  #CRM .Chart__type--1-values-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    z-index: 30;
+  }
+  #CRM .Chart__type--1-values-section li {
+    height: 153px;
+    cursor: pointer;
+  }
+  /**/
+  #CRM .CRM__chart-bottom-tems {
+    width: 1750px;
+    margin: 20px auto 0;
+  }
+  #CRM .Chart__country-stat {
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 620px;
+    position: relative;
+  }
+  #CRM .Country-stat__text {
+    display: flex;
+  }
+  #CRM .Country-stat__text span {
+    margin-left: 10px;
+  }
+  #CRM .Chart__icon li i {
+    color: #5e7d8a;
+  }
+  #CRM .CRM__chart-bottom-tems table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 0;
+  }
+  #CRM .CRM__chart-bottom-tems thead tr {
+    border-top: 1px solid #5e7d8a30;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  #CRM .CRM__chart-bottom-tems table tr {
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  #CRM .CRM__chart-bottom-tems tbody tr:hover {
+    cursor: pointer;
+    background-color: #5e7d8a20;
+  }
+  #CRM .CRM__chart-bottom-tems table td {
+    padding: 7px;
+    width: 20%;
+  }
+  #CRM .CRM__chart-bottom-tems tbody td {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #CRM .CRM__chart-bottom-tems tbody tr:last-child {
+    border: none;
+  }
+  #CRM .Country-stat__map {
+    width: 970px;
+  }
+  #CRM .Map__zoom-btn {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 40px;
+    background-color: #000;
+    left: 0;
+    transform: translateX(15px);
+  }
+  #CRM .Zoom-in,
+  #CRM .Zoom-out {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  #CRM .Map__country-name {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    z-index: 5;
+    display: none;
+  }
+  #CRM .Feedback {
+    height: 260px;
+    background-color: rgb(255, 191, 54);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #CRM .Feedback__text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  #CRM .Feedback__Author {
+    display: flex;
+    align-items: center;
+  }
+  #CRM .Author__image-item {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #CRM .Author__image-item img {
+    width: 45px;
+  }
+  #CRM .Author__info h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  #CRM .Author__info p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #CRM .Feedback-and-activity {
+    flex-direction: column;
+  }
+  .CRM .Activity {
+    background-color: #fff;
+    height: 340px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px 0;
+  }
+  .CRM .Activity__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px;
+  }
+  .CRM .Activity__setting ul {
+    display: flex;
+  }
+  .CRM .Activity__item {
+    padding: 13px 0;
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  .CRM .Activity__item:last-child {
+    border: none;
+  }
+  .CRM .Activity__header h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .CRM .Activity__item-content,
+  .CRM .Activity__item-description {
+    display: flex;
+  }
+  .CRM .Activity__profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .CRM .Activity__profile-image img {
+    width: 35px;
+  }
+  .CRM .Activity__info {
+    width: calc(100% - 35px);
+  }
+  .CRM .Activity__info h1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .CRM .Activity__info h1 span {
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  .CRM .Activity__info p {
+    font-size: 13px;
+    color: #adb3b6;
+    margin: 5px;
+  }
+  .CRM .Activity__item-description {
+    margin: 10px 0 0 45px;
+  }
+  .CRM .Activity__image {
+    margin-right: 5px;
+  }
+  .CRM .Activity__image {
+    width: 70px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .CRM .Activity__image img {
+    width: 70px;
+  }
+  #CRM .CRM__table table {
+    width: 1750px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #CRM  .CRM__table table tr,
+  #CRM .CRM__table thead tr {
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  #CRM .CRM__table table td {
+    padding: 10px;
+    font-weight: 400;
+    color: #364850fb;
+  }
+  #CRM .Table__email {
+    display: flex;
+    width: 140px;
+    overflow: hidden;
+    align-items: center;
+  }
+  #CRM  .Table__email h3 {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #CRM .Table__company {
+    display: flex;
+    align-items: center;
+  }
+  #CRM .Table__company-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  #CRM .table--color1 {
+    background-color: #d8f2fc;
+    color: #00acf0;
+  }
+  #CRM .table--color2 {
+    background-color: #fee2e1;
+    color: #f8534c;
+  }
+  #CRM .table--color3 {
+    background-color: #f2def2;
+    color: #c359aa;
+  }
+  #CRM .table--color4 {
+    background-color: #fcdce7;
+    color: #ed1b70;
+  }
+  #CRM .table--color5 {
+    background-color: #ffbf3630;
+    color: #ffbf36;
+  }
+  #CRM .Table__lead-stat {
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  #CRM .sb-line {
+    width: 80%;
+    height: 5px;
+    background-color: #5e7d8a30;
+  }
+  @media screen and (max-width: 1900px) {
+    #CRM .CRM__short-stat,
+    #CRM .CRM__chart,
+    #CRM .CRM__table {
+      width: 100vw;
+    }
+    #CRM  .CRM__short-stat-items,
+    #CRM .CRM__chart-top-items,
+    #CRM .CRM__chart-bottom-tems,
+    #CRM .CRM__table table {
+      width: 91.14vw;
+    }
+    #CRM .CRM__short-stat-item {
+      width: calc(100% / 4 - 15px);
+    }
+    #CRM .CRM__chart-bottom-tems table,
+    #CRM .Country-stat__map {
+      width: 100%;
+    }
+    #CRM .Chart__adwords-views,
+    #CRM .Chart__country-stat {
+      width: calc(57% - 20px);
+    }
+    #CRM .Chart__stock-price,
+    #CRM .Feedback-and-activity {
+      width: 43%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .CRM .Activity {
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    #CRM .CRM__short-stat-items {
+      flex-wrap: wrap;
+    }
+    #CRM .CRM__short-stat-item {
+      width: calc(100% / 2 - 10px);
+    }
+    #CRM .CRM__short-stat-item:nth-child(3),
+    #CRM .CRM__short-stat-item:nth-child(4) {
+      margin-top: 20px;
+    }
+    #CRM .CRM__chart-top-items,
+    #CRM .CRM__chart-bottom-tems {
+      flex-direction: column;
+      width: 91.14vw;
+      margin: 0 auto;
+    }
+    #CRM .Chart__adwords-views,
+    #CRM .Chart__country-stat,
+    #CRM .Chart__stock-price,
+    #CRM .Feedback-and-activity {
+      width: 100%;
+      margin: 10px 0;
+    }
+    #CRM .Chart__country-stat {
+      height: auto;
+    }
+    #CRM .CRM__table {
+      overflow: scroll;
+      width: 91.14vw;
+      margin: 0 auto;
+    }
+    #CRM .CRM__table table {
+      width: 900px;
+    }
+    #CRM .v-li {
+      font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #CRM .CRM__short-stat-item {
+      width: 100%;
+    }
+    #CRM .CRM__short-stat-item:nth-child(2) {
+      margin-top: 20px;
+    }
+    #CRM .Chart__country-stat {
+      overflow: scroll;
+    }
+    #CRM .Chart__stock-price_explanations span {
+      font-size: 11px;
+    }
+    .CRM .Activity {
+      height: auto;
+    }
+  }

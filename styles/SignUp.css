@@ -1,0 +1,275 @@
+  .SingUp {
+    display: flex;
+  }
+  .SingUp .Form {
+    width: 1120px;
+    height: 100vh;
+    background: rgb(245, 245, 246);
+  }
+  .SingUp .Form__content {
+    width: 1120px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .SingUp .Form__items {
+    width: 600px;
+  }
+  .SingUp .Form__title h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .SingUp .Form__title h6 {
+    font-size: 16px;
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  .SingUp .Form__elements input {
+    width: 600px;
+    margin: 10px 0;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+  }
+  .SingUp .Form__elements input:focus {
+    outline-color: #36bbef;
+  }
+  .SingUp .Name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  .SingUp .Name input {
+    width: calc((100% / 2) - 5px);
+  }
+  .SingUp .Form__radio input {
+    width: 20px;
+    height: 20px;
+  }
+  .SingUp .Form__radio {
+    display: flex;
+    align-items: center;
+  }
+  .SingUp  ::placeholder {
+    color: #cccccc;
+  }
+  .SingUp .Form__elements span {
+    margin-left: 10px;
+  }
+  .SingUp .Form__elements button {
+    width: 600px;
+    height: 40px;
+    background: #ffbf36;
+    border: none;
+    color: #fff;
+    margin: 20px 0;
+  }
+  .SingUp .Form__elements button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .SingUp .Form__or {
+    font-size: 14px;
+    color: #5e7d8a;
+    border-bottom: 1px solid #5e7d8a59;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+  }
+  .SingUp .Form__or p {
+    width: 40px;
+    height: 10px;
+    background: rgb(245, 245, 246);
+    transform: translateY(-15px);
+    text-align: center;
+  }
+  .SingUp .Form__social {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+  }
+  .SingUp .Face__icon,
+  .SingUp .Twit__icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SingUp .Form__social button {
+    width: 255px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .SingUp .Face,
+  .SingUp .Twit {
+    display: flex;
+    align-items: center;
+  }
+  .SingUp .Face__icon {
+    background: #344c9c;
+  }
+  .SingUp .Twit__icon {
+    background: #0194ce;
+  }
+  .SingUp .Face button {
+    background-color: #3a55b1;
+  }
+  .SingUp .Twit button {
+    background: #00acf0;
+  }
+  .SingUp .Form__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SingUp .Form__link p {
+    font-size: 18px;
+    color: #5e7d8a;
+  }
+  .SingUp .Form__link P:last-child{
+    color: #0194ce;
+    cursor: pointer;
+  }
+  .SingUp .Video-info {
+    width: 800px;
+    height: 100vh;
+  }
+  .SingUp .Video-info__item {
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    background-image: url(../assets/img/login-slider/bg1.jpg);
+    background-position: -575px 0;
+  }
+  .SingUp .Video-info__text {
+    width: 600px;
+    color: #fff;
+  }
+  .SingUp .Video-info__text h1 {
+    width: 600px;
+    font-size: 56px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .SingUp .Video-info__text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .SingUp .Play-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .SingUp .btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+  }
+  .SingUp .btn img {
+    width: 12px;
+    transform: translate(1px, 1px);
+  }
+  .SingUp .Play-btn p {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 1900px) {
+    .SingUp .Video-info,
+    .SingUp .Video-info__item {
+      width: 41vw;
+    }
+    .SingUp .Form,
+    .SingUp .Form__content {
+      width: 59vw;
+    }
+    .SingUp .Form__elements input,
+    .SingUp .Form__elements button,
+    .SingUp .Form__items,
+    .SingUp .Video-info__text {
+      width: 31.25vw;
+    }
+    .SingUp .Form__radio input {
+      width: 20px;
+    }
+    .SingUp .Name input {
+      width: calc((100% / 2) - 5px) !important;
+    }
+    .SingUp .Form__social button {
+      width: 12.28vw;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+      .SingUp {
+      display: block;
+    }
+    .SingUp .Video-info,
+    .SingUp .Video-info__item {
+      height: 450px;
+      width: 100vw;
+    }
+    .SingUp .Video-info__text {
+      width: 90vw;
+    }
+    .SingUp .Video-info__text h1 {
+      width: 90vw;
+      font-size: 44px;
+    }
+    .SingUp .Form,
+    .SingUp .Form__content {
+      width: 100vw;
+      height: 850px;
+    }
+    .SingUp .Form__elements input,
+    .SingUp .Form__elements button,
+    .SingUp .Form__items {
+      width: 90vw;
+    }
+    .SingUp .Form__radio input {
+      width: 20px;
+    }
+    .SingUp .Form__social button {
+      width: calc(45vw - 45px);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .SingUp .Form__social {
+      display: block;
+    }
+    .SingUp .Form__social button {
+      width: 90vw;
+      margin: 10px 0;
+    }
+    .SingUp .Video-info__text h1 {
+      font-size: 44px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .SingUp .Video-info__item {
+      height: 600px;
+    }
+    .SingUp .Form,
+    .SingUp .Form__content {
+      margin-top: 150px;
+    }
+  }

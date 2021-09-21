@@ -1,0 +1,223 @@
+ .Calendar {
+    overflow: hidden;
+  }
+  .Calendar__header {
+    padding: 80px 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .Calendar__note-list {
+    padding: 80px 15px 20px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f6;
+    transform: translateX(-230px);
+    transition: all 0.5s ease;
+  }
+  .close-btn i {
+    color: #000;
+    margin-left: 20px;
+    font-size: 18px !important;
+    cursor: pointer;
+  }
+  .Calendar__note-list li {
+    width: 160px;
+    height: 40px;
+    background-color: #edf9fe;
+    margin: 10px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0098a7;
+  }
+  .Calendar__note-list i {
+    font-size: 13px;
+  }
+  .Calendar__note-list h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .remove-btn {
+    width: 160px;
+    margin: 20px auto 0px;
+  }
+  .add-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .add-btn button {
+    width: 160px;
+    height: 40px;
+    background-color: rgb(255, 191, 54);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+  }
+  .Calendar__buttons,
+  .Calendar__date,
+  .Calendar__filter-btn {
+    display: flex;
+    align-items: center;
+  }
+  .Menu-btn {
+    cursor: pointer;
+  }
+  .Menu-btn li {
+    width: 20px;
+    height: 2px;
+    background-color: #5e7d8a;
+    margin: 4px 15px 4px 4px;
+  }
+  .Calendar__header button,
+  .Arrow-btn {
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .Today-btn button {
+    border: none;
+    background-color: #dfdfdf;
+    padding: 10px;
+    color: #fff;
+  }
+  .Calendar__filter-btn button {
+    border: 1px solid #858484;
+    border-right: none;
+    padding: 10px;
+    background: none;
+    color: #858484;
+  }
+  .Calendar__filter-btn button:hover {
+    background-color: #858484;
+    color: #fff;
+  }
+  .Filter__list-btn button {
+    border-right: 1px solid #858484;
+  }
+  .active {
+    background-color: #858484 !important;
+    color: #fff !important;
+  }
+  .Arrow-btn button {
+    border: 2px solid #dfdfdf;
+    background: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+  .Date_content {
+    display: flex;
+  }
+  .Date_content h1,
+  .Date_content span {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 5px;
+  }
+  #Calendar .Arrow-btn i {
+    font-size: 18px;
+  }
+  .month,
+  .week {
+    width: 100vw;
+    border-collapse: collapse;
+  }
+  .month td {
+    width: 14.29%;
+  }
+  .month thead tr {
+    text-align: center;
+  }
+  .month thead td {
+    border: 1px solid #5e7d8a30;
+  }
+  .month tbody td {
+    border: 1px solid #5e7d8a30;
+    height: calc((100vh - 180px) / 6);
+  }
+  .month tbody td p {
+    height: inherit;
+    padding: 4px;
+    box-sizing: border-box;
+    text-align: end;
+    color: #5e7d8a;
+  }
+  .week thead tr td,
+  .day thead tr td {
+    text-align: center;
+  }
+  .week td:first-child,
+  .day td:first-child {
+    width: 50px;
+  }
+  .week thead td,
+  .day thead td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .week tbody,
+  .day tbody {
+    display: block;
+    overflow-y: scroll;
+    height: calc(100vh - 245px);
+  }
+  .week tr:first-child,
+  .day tr:first-child {
+    border-top: 1px solid #5e7d8a30;
+  }
+  .week tr,
+  .day tr {
+    display: flex;
+    width: 100vw;
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  .week td {
+    display: block;
+    height: 50px;
+    border-right: 1px solid #5e7d8a30;
+    color: #5e7d8a;
+    text-align: end;
+    width: 13.95%;
+  }
+  .day td {
+    display: block;
+    height: 50px;
+    border-right: 1px solid #5e7d8a30;
+    color: #5e7d8a;
+    text-align: end;
+  }
+  .day tr td:nth-child(2) {
+    width: calc(100vw - 50px);
+  }
+  .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+  }
+  .list-item p {
+    color: #5e7d8a;
+  }
+  @media screen and (max-width: 768px) {
+    .Calendar__filter-btn button {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .Date_content h1,
+    .Date_content span {
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0 1px;
+    }
+  }

@@ -1,0 +1,279 @@
+  .Activity[id="Activity"] {
+    width: 1920px;
+    background-color: #f5f5f6;
+  }
+  #Activity .Activity__header {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    display: flex;
+    align-items: center;
+  }
+  #Activity .Activity__header svg {
+    width: 24px;
+    margin-right: 10px;
+  }
+  #Activity .Activity__header svg  path{
+    fill: #adb2b6;
+  }
+  #Activity .Activity__header h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  #Activity .Activity__items {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #Activity .Activity__item {
+    margin-top: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  #Activity .Activity__notifications {
+    margin: 40px 0 0;
+  }
+  #Activity .Activity__item-header time {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #Activity .Activity__item-header time span {
+    color: #5e7d8a;
+  }
+  #Activity .Notifications__title {
+    display: flex;
+  }
+  #Activity .Notifications__image {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  #Activity .Notifications__image img {
+    width: 35px;
+  
+    position: relative;
+    z-index: 5;
+  }
+  #Activity .Notifications__name-and-time {
+    width: calc(100% - 35px);
+  }
+  #Activity .Notifications__name-and-time h1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #Activity .Notifications__name-and-time h1 span {
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  #Activity .Notifications__name-and-time time {
+    font-size: 13px;
+    color: #adb3b6;
+    margin: 5px;
+  }
+  #Activity .Notifications__description {
+    display: flex;
+    padding: 35px 0 35px 60px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  #Activity .Activity__notifications {
+    position: relative;
+  }
+  #Activity .Notifications__line {
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 40px);
+    border-left: 1px solid #dedede80;
+    transform: translate(17px, 40px);
+    z-index: 1;
+  }
+  #Activity .Activity__notifications::after {
+    content: "";
+    position: absolute;
+    width: 1140px;
+    height: 2px;
+    border-bottom: 1px solid #dedede80;
+    transform: translate(60px, 0px);
+  }
+  #Activity .Group {
+    display: flex;
+    width: 330px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede80;
+  }
+  #Activity .Group__image {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  #Activity .Group__image img {
+    width: 85px;
+    position: relative;
+    z-index: 5;
+  }
+  #Activity .Group__name-time-and-memb {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #Activity .Group__name-time-and-memb h1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #Activity .Group__name-time-and-memb p {
+    font-size: 16px;
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  #Activity .Group__memb-image,
+  #Activity .Group__number-of-memb {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #fff;
+  }
+  #Activity .Group__memb-image img {
+    width: 25px;
+  }
+  #Activity .Group__memb-image:nth-child(2) {
+    transform: translateX(-10px);
+  }
+  #Activity .Group__memb-image:nth-child(3) {
+    transform: translateX(-20px);
+  }
+  #Activity .Group__memb-items {
+    display: flex;
+  }
+  #Activity .Group__number-of-memb {
+    background-color: rgb(221, 243, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-30px);
+    border: 2px solid #fff;
+  }
+  #Activity .Group__number-of-memb h1 {
+    font-size: 10px;
+    color: rgb(34, 175, 71);
+    font-weight: 600;
+  }
+  #Activity .Notifications__join-btn {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    padding: 0 60px 35px;
+    box-sizing: border-box;
+  }
+  #Activity .Notifications__join-btn p {
+    font-size: 16px;
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  #Activity .Notifications__join-btn p span {
+    color: #000;
+  }
+  #Activity .Notifications__join-btn button {
+    width: 100px;
+    background-color: #00acf0;
+    color: #fff;
+    border: none;
+    height: 25px;
+    border-radius: 2px;
+  }
+  #Activity .Activity__notifications:nth-child(3)::before {
+    height: 172px;
+  }
+  #Activity .Images {
+    display: flex;
+  }
+  #Activity .Images__item {
+    margin-right: 10px;
+  }
+  #Activity .Images__item-img {
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Activity .Images__item-img img {
+    width: 150px;
+  }
+  #Activity .Images__number-of-likes {
+    margin: 5px 0;
+  }
+  #Activity .Images__number-of-likes svg { 
+    width: 12px;
+    margin-right: 3px;
+  }
+  #Activity .Images__number-of-likes svg  path{
+    fill: #adb3b6;
+  }
+  #Activity .Images__number-of-likes span {
+    font-size: 12px;
+  }
+  #Activity .Activity__notifications:nth-child(4)::before {
+    height: 10px;
+  }
+  #Activity .Activity__notifications:nth-child(4)::after {
+    height: 0px;
+    width: 0px;
+  }
+  #Activity .Activity__item:nth-child(2) .Activity__notifications::before {
+    height: 10px;
+  }
+  #Activity .Activity__item:nth-child(2) .Activity__notifications::after {
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (max-width: 1900px) {
+    .Activity[id="Activity"] {
+      width: 100vw;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    #Activity .Activity__header,
+    #Activity .Activity__items {
+      width: 85vw;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    #Activity .Images {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #Activity .Notifications__join-btn {
+      width: 425px;
+    }
+    #Activity .Notifications__join-btn button {
+      width: 40px;
+    }
+    #Activity .Images__item-img {
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #Activity .Activity__notifications {
+      width: 85vw;
+    }
+    #Activity .Notifications__title,
+    #Activity .Notifications__description,
+    #Activity .Notifications__join-btn {
+      width: calc(100% - 40px);
+    }
+    #Activity .Group {
+      flex-direction: column;
+    }
+  }

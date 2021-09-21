@@ -1,0 +1,199 @@
+.Invoice {
+    background-color: #f5f5f6;
+    width: 1920px;
+  }
+  .Invoice__header {
+    padding: 100px 0 20px;
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Invoice__title {
+    display: flex;
+    align-items: center;
+  }
+  .Invoice__title svg,
+  .Invoice__btn svg {
+    width:24px;
+    margin-right: 10px;
+  }
+  .Invoice__title svg path ,
+  .Invoice__btn svg path {
+    fill: #adb2b6;
+  }
+  .Invoice__title h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .Invoice__btn {
+    display: flex;
+    align-items: center;
+  }
+  .Invoice__btn i {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .Invoice__btn button {
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    background-color: #00acf0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .Invoice__content {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 35px 40px;
+    box-sizing: border-box;
+  }
+  .Company-info__logo h1 {
+    color: #00acf0;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .Company-info__text h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: end;
+    margin-bottom: 20px;
+  }
+  .Company-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #5e7d8a36;
+  }
+  .Company-info li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  .Company-info__left-side li:first-child {
+    color: #000;
+  }
+  .Company-info span,
+  .Company-info__left-side li {
+    font-size: 16px;
+    color: #5e7d8a;
+  }
+  .Company-info__right-side ul li {
+    text-align: end;
+  }
+  .Payment-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .Payment-info h1 {
+    font-size: 13px;
+    color: #5e7d8a;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+  .Payment-info li {
+    font-size: 16px;
+    color: #5e7d8a;
+    margin: 5px 0;
+  }
+  .Payment li,
+  .Payment-info__amount,
+  .Payment h1 {
+    text-align: end;
+  }
+  .Payment-info__amount {
+    margin-top: 30px;
+  }
+  .Payment-info__amount p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .Items {
+    margin: 60px 0 0;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #5e7d8a36;
+  }
+  .Items h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #5e7d8a36;
+  }
+  #Invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  #Invoice table td {
+    font-size: 16px;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #f5f5f6;
+  }
+  #Invoice table tr td:nth-child(2),
+  #Invoice table tr td:nth-child(3),
+  #Invoice table tr td:nth-child(4) {
+    width: 11%;
+    text-align: end;
+  }
+  tfoot tr td:nth-child(3) {
+    color: #5e7d8a;
+  }
+  tfoot tr:nth-child(4) td:nth-child(3) {
+    color: #000;
+  }
+  tfoot tr:nth-child(4) td:nth-child(4) {
+    font-weight: 700;
+  }
+  .Notes {
+    padding: 20px;
+  }
+  .Notes li {
+    list-style-type: disc;
+    font-size: 14px;
+    color: #5e7d8a;
+  }
+  @media screen and (max-width: 1900px) {
+    .Invoice {
+      width: 100vw;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    .Invoice__content,
+    .Invoice__header {
+      width: 85vw;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .Company-info,
+    .Payment-info {
+      flex-direction: column;
+    }
+    .Company-info__right-side,
+    .Payment {
+      margin-top: 20px;
+    }
+    .Company-info__right-side ul li,
+    .Payment li,
+    .Payment h1,
+    .Payment-info__amount {
+      text-align: start;
+    }
+    .Items {
+      overflow-x: scroll;
+    }
+    .Company-info__text h1 {
+      text-align: start;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .Invoice__header,
+    .Invoice__content {
+      width: 90vw;
+    }
+  }

@@ -1,0 +1,309 @@
+.Login {
+    display: flex;
+  }
+  .Login .Form {
+    width: 1120px;
+    height: 100vh;
+    background: rgb(245, 245, 246);
+  }
+  .Login .Form__content {
+    width: 1120px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Login .Form__items {
+    width: 600px;
+  }
+  .Login .Form__title h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .Login .Form__title h6 {
+    font-size: 16px;
+    color: #5e7d8a;
+    font-weight: 400;
+  }
+  .Login .Form__elements {
+    margin-bottom: 20px;
+  }
+  
+  .Login .Form__elements input {
+    width: 600px;
+    margin: 10px 0;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+  }
+  .Login .Form__elements input:focus {
+    outline-color: #36bbef;
+  }
+  .Login .Form__radio input {
+    width: 20px;
+    height: 20px;
+  }
+  .Login .Form__radio {
+    display: flex;
+    align-items: center;
+  }
+  .Login ::placeholder {
+    color: #ccc;
+  }
+  .Login .Form__elements span {
+    margin-left: 10px;
+  }
+  .Login .Form__elements button {
+    width: 600px;
+    height: 40px;
+    background: #ffbf36;
+    border: none;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .Login .Form__elements button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .Login .Form__log {
+    text-align: center;
+    font-size: 14px;
+    color: #5e7d8a;
+  }
+  .Login .Form__or {
+    font-size: 14px;
+    color: #5e7d8a;
+    border-bottom: 1px solid #5e7d8a59;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+  }
+  .Login .Form__or p {
+    width: 40px;
+    height: 10px;
+    background: rgb(245, 245, 246);
+    text-align: center;
+  }
+  .Login .Form__social {
+    display: flex;
+    margin: 40px 0 20px;
+    justify-content: space-between;
+  }
+  .Login .Face__icon,
+  .Login .Twit__icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Login .Form__social button {
+    width: 255px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .Login .Face,
+  .Login .Twit {
+    display: flex;
+    align-items: center;
+  }
+  .Login .Face__icon {
+    background: #344c9c;
+  }
+  .Login .Twit__icon {
+    background: #0194ce;
+  }
+  .Login .Face button {
+    background-color: #3a55b1;
+  }
+  .Login .Twit button {
+    background: #00acf0;
+  }
+  .Login .Form__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Login .Form__link p {
+    font-size: 18px;
+    color: #5e7d8a;
+  }
+  .Login .Form__link p:last-child {
+    color: #0194ce;
+    cursor: pointer;
+  }
+  .Login .Slider {
+    width: 800px;
+    height: 100vh;
+    position: relative;
+  }
+  .Login .Slider__item {
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
+  .Login .Slider__item:first-child {
+    background-image: url(../assets/img/login-slider/bg2.jpg);
+    background-position: -530px 0;
+  }
+  .Login .Slider__item:last-child {
+    background-image: url(../assets/img/login-slider/bg1.jpg);
+    background-position: -575px 0;
+  }
+  .Login .Slider__text {
+    width: 600px;
+    color: #fff;
+    text-align: center;
+  }
+  .Login .Slider__text h1 {
+    font-size: 56px;
+    margin: 0;
+  }
+  .Login .Slider__text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .Login .Slider__nav {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .Login .nav__dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    margin: 0 3px;
+  }
+  .Login .nav__dot--active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .Login .Slider__item--fade-in {
+    animation: Slider__item--fade-in 1s ease forwards;
+  }
+  .Login .Slider__item--fade-out {
+    animation: Slider__item--fade-out 1s ease forwards;
+  }
+  @keyframes Slider__item--fade-in {
+    0% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes Slider__item--fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @media screen and (max-width: 1900px) {
+    .Login .Slider,
+    .Login .Slider__item {
+      width: 41vw;
+    }
+    .Login .Form,
+    .Login .Form__content {
+      width: 59vw;
+    }
+    .Login .Form__elements input,
+    .Login .Form__elements button,
+    .Login .Form__items,
+    .Login .Slider__text {
+      width: 31.25vw;
+    }
+    .Login .Form__radio input {
+      width: 20px;
+    }
+    .Login .Form__social button {
+      width: 12.28vw;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+     .Login {
+      display: block;
+    }
+    .Login .Slider,
+    .Login .Slider__item {
+      height: 350px;
+      width: 100vw;
+    }
+    .Login .Slider__nav {
+      width: 100vw;
+      bottom: unset;
+      transform: translateY(325px);
+    }
+    .Login .Slider__text {
+      width: 90vw;
+    }
+    .Login .Form,
+    .Login .Form__content {
+      width: 100vw;
+      height: 850px;
+    }
+    .Login .Form__elements input,
+    .Login .Form__elements button,
+    .Login .Form__items,
+    .Login .Slider__text {
+      width: 90vw;
+    }
+    .Login .Form__radio input {
+      width: 20px;
+    }
+    .Login .Form__social button {
+      width: calc(45vw - 45px);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .Login .Form__social {
+      display: block;
+    }
+    .Login .Form__social button {
+      width: 90vw;
+      margin: 10px 0;
+    }
+    .Login .Slider__text h1 {
+      font-size: 44px;
+    }
+    .Login .Slider,
+    .Login .Slider__item {
+      height: 380px;
+    }
+    .Login .Slider__nav {
+      transform: translateY(355px);
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .Login .Slider,
+    .Login .Slider__item {
+      height: 500px;
+    }
+    .Login .Slider__nav {
+      transform: translateY(475px);
+    }
+  }

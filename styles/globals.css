@@ -1,16 +1,64 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "Index.css";
+@import "Login.css";
+@import "SignUp.css"; 
+@import "Header.css"; 
+@import "Footer.css"; 
+@import "Profile.css"; 
+@import "Invoice.css"; 
+@import "Activity.css"; 
+@import "Faq.css"; 
+@import "Gallery.css"; 
+@import "Chat.css"; 
+@import "Email.css"; 
+@import "File-Manager.css"; 
+@import "Calendar.css"; 
+@import "CRM.css"; 
+@import "Map.css"; 
+@import "Project.css";  
+@import "Statistic.css";  
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #dedede;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  } 
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+    margin: 0;
+  }
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  main {
+    overflow: hidden;
+  }

@@ -1,0 +1,226 @@
+.File-manager__content {
+    padding: 60px 0 0;
+    display: flex;
+    max-width: 1920px;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .File-manager__menu {
+    width: 200px;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f6;
+    color: #5e7d8a;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  .File-manager__menu ul {
+    padding: 20px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .close {
+    margin-right: 10px;
+    color: #00acf0;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+  }
+  .File-manager__menu li {
+    font-size: 16px;
+    margin: 15px 0;
+    white-space: nowrap;
+  }
+  .upload-btnu button {
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 191, 54);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 40px;
+    cursor: pointer;
+  }
+  .upload-btnu {
+    border-bottom: 1px solid #5e7d8a30;
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
+  .new-folder-btn {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0;
+    cursor: pointer;
+  }
+  .new-folder-btn svg {
+    width: 16px;
+  }
+  .new-folder-btn button {
+    border: none;
+    background-color: none;
+    color: #5e7d8a;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .File-manager__files {
+    width: 1720px;
+    height: calc(100vh - 140px);
+    background-color: #fff;
+    transition: all 0.5s ease;
+  }
+  .Files__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .Files__title h3 {
+    font-size: 20px;
+  }
+  .Files__header svg {
+    width: 24px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .Files__header svg path{
+    fill: #5e7d8a;
+  }
+  .Files__menu-and-search-btn,
+  .Files__upload-and-view,
+  .Files__change-view {
+    display: flex;
+    align-items: center;
+  }
+  .menu-btn li {
+    width: 25px;
+    height: 3px;
+    background-color: #5e7d8a;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .File-manager__content .column li {
+    width: 18px;
+    height: 2px;
+    background-color: #5e7d8a;
+    margin: 5px 0;
+  }
+  .File-manager__content .row {
+    display: none;
+  }
+  .File-manager__content .row ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 26px;
+  }
+  .File-manager__content .row li {
+    width: 5px;
+    height: 5px;
+    border: 2px solid #5e7d8a;
+    margin: 2px;
+  }
+  .File-manager__content .row,
+  .File-manager__content .column {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .File-manager__content table {
+    border-collapse: collapse;
+    width: 1720px;
+    overflow-x: scroll;
+  }
+  .File-manager__content table tr td:first-child {
+    width: 30%;
+  }
+  .File-manager__content thead tr {
+    height: 50px;
+    border-top: 1px solid #5e7d8a30;
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  .File-manager__content thead td {
+    padding: 0 20px;
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  .File-manager__content tbody tr {
+    cursor: pointer;
+  }
+  .File-manager__content tbody tr:hover {
+    background-color: rgb(216, 242, 252);
+  }
+  .File-manager__content tbody td {
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid #5e7d8a30;
+  }
+  .Files__images-item {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Files__images-item img {
+    width: 50px;
+  }
+  .Files__images {
+    display: flex;
+    align-items: center;
+  }
+  .Files__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Files__buttons svg {
+    margin: 0 10px;
+    color: #5e7d8a;
+    font-size: 20px;
+  }
+  .Files__buttons svg path{
+    fill: #5e7d8a;
+  }
+  .fa-file-download {
+    color: #00acf0 !important;
+  }
+  @media screen and (max-width: 1900px) {
+    .fm-section {
+      width: 100vw;
+    }
+    .File-manager__files,
+    .File-manager__content table {
+      width: calc(100vw - 200px);
+    }
+    .File-manager__menu {
+      position: relative;
+    }
+  }
+  @media screen and (max-width: 996px) {
+    .Files__header,
+    .File-manager__files {
+      width: 100vw;
+    }
+    .File-manager__files {
+      height: auto;
+    }
+    .File-manager__menu {
+      position: fixed;
+      width: 0;
+    }
+    .close {
+      display: block;
+    }
+    .File-manager__content table {
+      width: 996px;
+    }
+    .Files__items {
+      overflow-x: scroll;
+      width: 100vw;
+    }
+  }
